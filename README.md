@@ -1,13 +1,5 @@
-# 42-get_next_line
-Reading the text available on a file descriptor.
+# get_next_line
 
-project in 42Cursus, with this You will understand how files are opened, read and closed from a file descriptor🔐.
+This project now lives in **[42-Libft-C](https://github.com/fasharif/42-Libft-C/tree/main/get_next_line)**, as part of my C library, with tests at buffer sizes of 1, 42 and 10,000. This repository is kept as it was, for reference.
 
-Study Links -> everthing is a file: https://www.youtube.com/watch?v=dDwXnB6XeiA
-
-How to manipulate fd: https://www.youtube.com/watch?v=dP3N8g7h8gY&ab_channel=ShellWaveShellWave
-
-D flag used to set BUFFER_SIZE: https://www.rapidtables.com/code/linux/gcc/gcc-d.html
-
-Static variables: https://www.geeksforgeeks.org/static-variables-in-c/ https://craftofcoding.wordpress.com/2015/12/07/memory-in-c-the-stack-the-heap-and-static/
-https://www.youtube.com/watch?v=3E-r4GfvWOI
+`get_next_line` returns one line at a time from a file descriptor; the bonus version reads from several descriptors at once. The version in libft also fixes an out-of-bounds write for file descriptor 256, and a leak when `read` fails.
